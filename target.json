@@ -1,10 +1,10 @@
 {
-  "name": "bbc-microbit-gcc",
+  "name": "minewtech-i7-gcc",
   "version": "1.0.0",
   "inherits": {
     "nordic-nrf51822-gcc": "^1.0.0"
   },
-  "description": "Official mbed build target for the BBC micro:bit chip.",
+  "description": "Minewtech i7 beacon target - for beacons like the following http://minew.en.alibaba.com/search/product?fsb=y&IndexArea=&CatId=&SearchText=i7",
   "licenses": [
     {
       "url": "https://spdx.org/licenses/Apache-2.0",
@@ -13,7 +13,8 @@
   ],
   "keywords": [
     "gcc",
-    "mbed-official"
+    "minewtech",
+    "beacon"
   ],
   "similarTo": [
     "mkit"
@@ -34,44 +35,16 @@
         }
       },
       "pins": {
-        "PAD3": "p1",
-        "PAD2": "p2",
-        "PAD1": "p3",
-        "COL1": "p4",
-        "COL2": "p5",
-        "COL3": "p6",
-        "COL4": "p7",
-        "COL5": "p8",
-        "COL6": "p9",
-        "COL7": "p10",
-        "COL8": "p11",
-        "COL9": "p12",
-        "ROW1": "p13",
-        "ROW2": "p14",
-        "ROW3": "p15",
-        "BUTTON_A": "p17",
-        "TGT_NRESET": "p19",
-        "MOSI": "p21",
-        "MISO": "p22",
-        "SCK": "p23",
-        "TGT_TX": "p24",
-        "TGT_RX": "p25",
-        "BUTTON_B": "p26",
-        "ACCEL_INT2": "p27",
-        "ACCEL_INT1": "p28",
-        "MAG_INT1": "p29",
-        "RX_PIN_NUMBER": "TGT_RX",
-        "TX_PIN_NUMBER": "TGT_TX",
+        "BUTTON1": "p18",
+        "BUTTON2": "p8",
+        "LED1": "p15",
+        "LED2": "p16",
+        "LED3": "p12",
+        "LED4": "p16",
+        "TX_PIN_NUMBER": "p26",
+        "RX_PIN_NUMBER": "p27",
         "CTS_PIN_NUMBER": "31",
-        "RTS_PIN_NUMBER": "31",
-        "USBTX": "TX_PIN_NUMBER",
-        "USBRX": "RX_PIN_NUMBER",
-        "LED1": "PAD1",
-        "LED2": "PAD2",
-        "LED3": "PAD3",
-        "LED4": "P0_16",
-        "I2C_SDA0": "p30",
-        "I2C_SCL0": "p0"
+        "RTS_PIN_NUMBER": "31"
       }
     }
   }
